@@ -19,9 +19,9 @@ if(isset($_POST)){
     $guardar = mysqli_query($db, $sql);
 
     if($guardar){
-        $_SESSION['guardado'] = "Éxito al guardar el usuario en la BD";
+        $_SESSION['guardado'] = "Éxito al enviar y guardar el mail en la BD";
     }else{
-        $_SESSION['fallo'] = "Fallo al guardar el usuario en la BD";
+        $_SESSION['fallo'] = "Fallo al enviar y guardar el mail en la BD";
     }
     
     //Enviar email 
